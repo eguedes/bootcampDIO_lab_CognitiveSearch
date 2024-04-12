@@ -6,18 +6,14 @@ Este repositório tem como objetivo entregar o projeto final do módulo "Intelig
 
 Neste exercício, foi criado um recurso Azure AI servcies, um AI Search e uma Storage account. 
 
+Em seguida, tambem foi criado um contêiner. Para uso no laboratório, este contâiner é configurado com nível de acesso Público. Para obter um volume de dados que pudesse ser usado para realizar testes, foram importados arquivos de exemplo, disponíbilizados [no tutorial da Microsoft](https://aka.ms/mslearn-coffee-reviews).
 
+Após o upload dos arquivos de exemplo, eles podem ser usados no Azure AI Search para se obter *insights*. Para isso, eles são importados para o recurso AI Search. Na importação são selecionadas skills cognitivas, funções que permitem a extração de nomes de lugares, frases chave, sentimento, e tags e imagens de imagens. Para a extração de informações de imagens, também foi habilitado o OCR.
 
-em seguida testado sua utilização no [Language Studio](https://language.cognitive.azure.com.). 
+### Cognitive Search
 
-### Criando um recurso Azure AI servcies
+Com tudo configurado, é possível usar o Search explorer para fazer testes de buscar e revisar os resultados.
 
-Já com o grupo de recurso criado, vá para o [Language Studio](https://language.cognitive.azure.com.) e selecione a aba **Classify text** e depois selecione **Analyze sentiment and mine opinions**.
+Na importação dos dados também foi criada uma knowledge store. Na knowledge store se encontram dados extraídos enriquecidos pelas skills AI no formato de projeções e tabelas.
 
-Para testar, podemos selecionar o idioma e inserir o texto na caixa de texto.
-
-Como resposta, temos informações como grau de positividade, negatividade e neutralidade, assim como os pontos principais e pontos chave. 
-
-Como exemplo, as frases "Eu amo programar em Python!" e "Eu odeio acordar cedo." podem ser analisadas e a primeira frase terá um sentimento positivo, enquanto a segunda frase terá um sentimento negativo.
-
-Os insights que podem ser tirados desses testes incluem entender o sentimento geral de um conjunto de textos, identificar tendências de sentimentos ao longo do tempo, e usar essas informações para informar decisões de negócios ou estratégias de produto. Por exemplo, você pode usar a análise de sentimentos para monitorar a opinião dos usuários sobre seu produto nas redes sociais e usar essas informações para melhorar seu produto.
+Num mundo onde estamos sobrecarregados de dados (que podem ou não ser transformados em informações), é de grande relevância ter uma ferramenta que faça uma análise dos dados de forma que eles possam ser pesquisados e oferecer insights em diferentes frentes e abordagens. A capacidade de obtenção de informações de imagens se apresenta como outra grande vantagem, visto que grande parte do volume de dados trafegados hoje são de conteúdo audio-visual. 
